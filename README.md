@@ -8,6 +8,7 @@ Install with bower:
 ```
 bower install scroll-link
 ```
+
 ## Usage
 
 ### Scroll to page element
@@ -28,6 +29,7 @@ bower install scroll-link
     </body>
 </html>
 ```
+
 ### Scroll to position
 ```html
 <!doctype html>
@@ -42,10 +44,12 @@ bower install scroll-link
     </body>
 </html>
 ```
+
 ## Attribute properties 
  * __href="selector"__ - scroll to html selector (document.querySelector). Prefer then "top"/"left";
  * __top="Number"__ - scroll to top position
  * __left="Number"__ - scroll to top position
+ 
 ## Styling
 Free for changes!
 ### CSS Custom Properties

@@ -1,0 +1,53 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+<!--
+`scroll-link`
+Smooth Scroll behavior
+
+@demo demo/index.html  WIP
+-->
+<dom-module id="scroll-link">
+  <template>
+
+    <style>
+      :host {
+        display: var(--scroll-link-display, block);
+      }
+
+    </style>
+
+    <a href="{{href}}" title="{{title}}">
+      <content></content>
+    </a>
+
+  </template>
+
+  <script src="../smoothscroll/dist/smoothscroll.js"></script>
+  <script>
+    Polymer({
+      is: 'scroll-link',
+      properties: {
+        href: String, 
+        title: String, 
+        top: {
+          type: Number,
+          value: 0
+        },
+        left: {
+          type: Number,
+          value: 0
+        },
+      },
+       listeners: {
+        'tap': 'scroll',
+      },
+      scroll: function(event) {
+        event.preventDefault();
+
+        if (this.href) {
+          return document.querySelector(this.href).scrollIntoView({ behavior: 'smooth' });
+        }
+        return  window.scrollTo({ top: this.top, left: this.left, behavior: 'smooth' });
+      }
+    });
+  </script>
+</dom-module>

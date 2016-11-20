@@ -1,0 +1,25 @@
+{
+  "name": "scroll-link",
+  "description": "Smooth Scroll behavior",
+  "authors": [
+    "c01nd01r <stas.er.it@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "main": "scroll-link.html",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.4.0",
+    "smoothscroll": "^0.3.4"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
+    "web-component-tester": "^4.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+  }
+}
